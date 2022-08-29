@@ -10,7 +10,7 @@ node {
 	}
 
 	stage('Deploy') {
-		sh ("docker run -d -p 8081:80 -v /var/log/:/var/log/ projectdemo")
+		sh ("docker run -d -p 8081:80  projectdemo")
 	}
 	
 	stage('Remove old images') {
